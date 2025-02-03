@@ -219,10 +219,11 @@ while game_over==False:
             break
 
     while True:
-        print_level_def()
+
         screen.update()
         if level_end():
             level+=1
+            print_level_def()
             screen.update()
             break
         spawning_beforeset()
